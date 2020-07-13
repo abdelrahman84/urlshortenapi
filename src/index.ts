@@ -4,6 +4,12 @@ import URLShorten from './controllers/shortenurl';
 const app = express();
 const port = 8080; // default port to listen
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/shortenurl', {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
+
 
 // define a route handler for the default home page
 app.get( "/", ( req, res ) => {
