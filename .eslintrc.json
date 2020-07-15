@@ -6,7 +6,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/recommended",
+        "plugin:vue/base"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
