@@ -18,19 +18,20 @@ Vue.use(Toasted);
 export default class SubmitURL extends Vue {
   @Prop() private msg!: string;
   private original_url: string;
-  public $toast: Toasted;
+  public error: Boolean;
 
   constructor() {
     super();
     this.original_url = "";
+    this.error = false;
   }
 
   public mounted() {
-    // console.log('hi');
   }
 
   public submitURL() {
     if (this.original_url.length === 0) {
+      this.error = true;
       this.$toasted.error("Please complete all fields", {
         position: "bottom-right",
         duration: 2000
