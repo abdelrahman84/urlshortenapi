@@ -1,7 +1,7 @@
 # urlshortenapi
 This is a simple app which shortens URL to a unique 8 alphanumeric characters.
 
-Backend is built with nodejs, mongodb, and front end is built with Vuejs. The full app is dockerized.
+Backend is built with nodejs, mongodb, and frontend is built with Vuejs. The full app is dockerized.
 
 To install, you can either use the docker file, by running the command 'docker-compose up' from the root directly, or by goind to each directory sperartely:
 
