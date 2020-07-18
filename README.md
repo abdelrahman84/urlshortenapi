@@ -1,5 +1,5 @@
 # urlshortenapi
-This is a simple app which shorten URL to a unique 8 alphanumeric characters.
+This is a simple app which shortens URL to a unique 8 alphanumeric characters.
 
 Backend is built with nodejs, mongodb, and front end is built with Vuejs. The full app is dockerized.
 
